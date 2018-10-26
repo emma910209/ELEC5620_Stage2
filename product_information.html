@@ -13,6 +13,7 @@
 								<section>
 									<h2 class="card-title">{{ product.name }}</h2>
                                     <h3 class="card-subtitle">{{ product.company.user.username }}</h3>
+
                                     <p class="card-text text-truncate">{{ product.description }}</p>
 									
 								</section>
@@ -24,14 +25,19 @@
 									<h2>Product Information</h2>
 									<ul class="small-image-list">
 										<li>
-											<a href="#"><img src="images/pic2.jpg" alt="" class="left" /></a>
-											<h4>Jane Anderson</h4>
-											<p>Varius nibh. Suspendisse vitae magna eget et amet mollis justo facilisis amet quis.</p>
+											<a href="#"><img src="" alt="" class="left" /></a>
+											<h4>Category</h4>
+											<p class="card-text text-truncate">{{ product.category }}</p>
 										</li>
 										<li>
-											<a href="#"><img src="images/pic1.jpg" alt="" class="left" /></a>
-											<h4>James Doe</h4>
-											<p>Vitae magna eget odio amet mollis justo facilisis amet quis. Sed sagittis consequat.</p>
+											<a href="#"><img src="" alt="" class="left" /></a>
+											<h4>Stock</h4>
+											<p class="card-text text-truncate">{{ product.stock }}</p>
+										</li>
+										<li>
+											<a href="#"><img src="" alt="" class="left" /></a>
+											<h4>Price</h4>
+											<p class="card-text text-truncate">{{ product.price }}</p>
 										</li>
 									</ul>
 								</section>
